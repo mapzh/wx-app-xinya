@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="secondary-content">
+  <scroll-view class="secondary-scroll-left">
+    <view id="green" class="scroll-view-item bc_green"></view>
+    <view id="red"  class="scroll-view-item bc_red"></view>
+    <view id="yellow" class="scroll-view-item bc_yellow"></view>
+    <view id="blue" class="scroll-view-item bc_blue"></view>
+  </scroll-view>
+  <scroll-view class="secondary-scroll-right">
+  
+  </scroll-view>
+  <!--<block wx:for="{{icons}}" wx:for-index="i">
+    <view class="index-content-background">
+          <image class="index-content-icon" src="{{item}}" background-size="cover" bindtap="bindViewTap"></image>
+          <text class="index-content-title">{{titles[i]}}</text>
+    </view>
+  </block>-->
+</view>

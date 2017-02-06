@@ -1,0 +1,28 @@
+/**index.wxss**/
+.index-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.index-content-background {
+  display: flex;
+  background-color: #FFFFFF;
+  margin: 0rpx;
+  position: relative;
+  width: 100%;
+  height: 20%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.index-content-icon {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 30rpx;
+  border-radius: 50%;
+}
+
+.index-content-title {
+  color: #aaa;
+}

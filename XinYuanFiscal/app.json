@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/home/index",
+    "pages/secondary/index",
+    "pages/detail/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "鑫源财税",
+    "navigationBarTextStyle":"gray"
+  }
+}
