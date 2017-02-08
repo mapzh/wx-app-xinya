@@ -1,0 +1,29 @@
+/**index.wxss**/
+.secondary-content {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.secondary-scroll {
+  height: 100%;
+  display: flex;
+}
+
+.secondary-scroll-left {
+  background-color: #f8f8f8;
+  width: 35%;
+}
+
+.secondary-scroll-right {
+  background-color: #e3e3e3;
+  width: 65%;
+}
+
+.scroll-left-view-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    background-color: #e3e3e3;
+}
