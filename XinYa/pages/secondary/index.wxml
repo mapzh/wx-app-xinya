@@ -1,13 +1,17 @@
 <!--index.wxml-->
 <view class="secondary-content">
   <scroll-view class="secondary-scroll-left">
-    <block wx:for="{{services}}" wx:for-index="i">
+    <block wx:for="{{services}}" wx:for-item="service">
       <view class="scroll-left-view-item">
-        <text class="index-content-title">{{item.title}}</text>
+        <text class="index-content-title">{{service.title}}</text>
       </view>
    </block>
   </scroll-view>
   <scroll-view class="secondary-scroll-right">
-  
+    <block wx:for="{{selectedService.details}}" wx:for-item="service">
+      <view class="scroll-left-view-item">
+        <text class="index-content-title">{{service.title}}</text>
+      </view>
+    </block>
   </scroll-view>
 </view>

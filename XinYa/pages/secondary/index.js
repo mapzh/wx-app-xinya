@@ -20,7 +20,17 @@ function Service(title, details) {
 Page({
   data: {
     userInfo: {},
-    services: []
+    services: [],
+    selectedService: null
+  },
+
+  //事件处理函数
+  refreshSubServices: function(event) {
+    var service = event.target.dataset.service
+    this.setData({
+      selectedService: service
+      console.log(service.title)
+    })
   },
  
   onLoad: function () {
@@ -54,12 +64,13 @@ Page({
       var s3 = new Service("财税服务", details)
       var s4 = new Service("财税服务", details)
       var s5 = new Service("财税服务", details)
-
+      that.setData({
+        selectedService: s1
+      })
       return new Array(s1, s2, s3, s4, s5)
     }
 
     var services = getServices()
-    console.log(services)
     that.setData({
       services: services
     })

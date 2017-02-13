@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <view class="container">
-  <block wx:for="{{icons}}" wx:for-index="i">
+  <block wx:for="{{icons}}" wx:key="*this">
     <view class="index-content-background">
           <image class="index-content-icon" src="{{item}}" background-size="cover" bindtap="bindViewTap"></image>
           <text class="index-content-title">{{titles[i]}}</text>
